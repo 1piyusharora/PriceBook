@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palabs.pricebook.ItemDetails"
+    android:padding="16dp"
+    android:background="@drawable/gradient20"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="193dp"
+            android:layout_height="36dp"
+            android:layout_weight="0.01"
+            android:text="ITEM  DETAILS"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="Item Name   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/textMRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="MRP   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/textInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="Invoice Rate   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/textHSN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="HSN Code   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:id="@+id/editQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Quantity"
+            android:textSize="20dp"
+            android:layout_marginTop="18dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+
+
+        <EditText
+            android:id="@+id/editMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Margin"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+
+        <EditText
+            android:id="@+id/editGST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="GST"
+            android:textSize="20dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            >
+
+
+            <Button
+                android:id="@+id/buttonCalculate"
+                android:layout_width="125dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/buttonbg2"
+                android:onClick="calc"
+                android:text="calculate"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/buttonRefreash"
+                android:layout_width="134dp"
+                android:layout_height="49dp"
+                android:text="refresh"
+                android:textSize="18dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="18dp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/buttonbg2"
+                android:onClick="refrsh"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/textSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="SP   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="18dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/textCP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="CP   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/textTax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            android:text="Tax   :   "
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.palabs.pricebook.ItemInsertion"
+    android:background="@drawable/gradient20"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textViewItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ITEM   DETAILS"
+            android:textSize="24dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="36dp"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/editTextItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginTop="36dp"
+            android:hint="Item Name"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="22dp"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextMRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="36dp"
+            android:hint="M.R.P."
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="22dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="36dp"
+            android:hint="Invoice Rate"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="22dp"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextHSN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="36dp"
+            android:hint="HSN Code"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="22dp"
+            />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="186dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:text="SUBMIT"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/buttonbg2" />
+
+    </LinearLayout>
+
+
+</ScrollView>
